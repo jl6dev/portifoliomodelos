@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jamyle Monteiro | Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <section class="hero reveal">
+        <div class="perfil-box">
+            <img src="IMG_9285.jpg.jpeg" class="foto-perfil">
+        </div>
+        <h1>Jamyle Monteiro</h1>
+        <h3>Desenvolvedora Web</h3>
+        <p>
+            Crio sites modernos, acessíveis e estratégicos
+            para marcas que querem se destacar online.
+        </p>
+    </section>
+
+<section class="portfolio reveal">
+  <h2>Sites Institucionais</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left">&lt;</button>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="item"><img src="cursinho1.png"><span>Pagína home</span><button onclick="openModal('Projeto focado em comunicação de cursos e materiais educativos.')">Ver detalhes</button></div>
+        <div class="item"><img src="cursinho2.png"><span>Calculadoras interativas</span><button onclick="openModal('Design limpo para escolas e professores apresentarem seus conteúdos.')">Ver detalhes</button></div>
+        <div class="item"><img src="cursinhoenem.png"><span>aba Enem</span><button onclick="openModal('Layout moderno e responsivo, para cursos online.')">Ver detalhes</button></div>
+        <div class="item"><img src="cursinhossa.png"><span>aba SSA</span><button onclick="openModal('Foco em navegação simples e aprendizado intuitivo.')">Ver detalhes</button></div>
+        <div class="item"><img src="cursinhoconcursos.png"><span>aba Concursos</span><button onclick="openModal('Design voltado para interação e experiência de estudantes.')">Ver detalhes</button></div>
+      </div>
+    </div>
+    <button class="carousel-btn right">&gt;</button>
+  </div>
+</section>
+
+
+<section class="portfolio reveal">
+  <h2>Sites Biolink</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left">&lt;</button>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="item"><img src="biolink1.png"><span>Apresentação inicial</span><button onclick="openModal('Página de links compacta para redes sociais.')">Ver detalhes</button></div>
+        <div class="item"><img src="biolink2.png"><span>Apresentação profissional</span><button onclick="openModal('Design moderno e elegante para direcionamento de pessoas.')">Ver detalhes</button></div>
+        <div class="item"><img src="biolink3.png"><span>Botões interativos</span><button onclick="openModal('Botões interativos para selecionar o serviço desejado')">Ver detalhes</button></div>
+        <div class="item"><img src="biolink4.png"><span>Serviços oferecidos</span><button onclick="openModal('Foco em design visual para destaque do conteúdo.')">Ver detalhes</button></div>
+        <div class="item"><img src="biolink5.png"><span>Link para Whatsaap</span><button onclick="openModal('Interface clean para redirecionamento fácil de links.')">Ver detalhes</button></div>
+         <div class="item"><img src="biolink6.png"><span>Mensagem pronta para Whatsaap</span><button onclick="openModal('Mensagem pronta de acordo com o serviço selecionado.')">Ver detalhes</button></div>
+      </div>
+    </div>
+    <button class="carousel-btn right">&gt;</button>
+  </div>
+</section>
+
+
+<section class="portfolio reveal">
+  <h2>Sites Educacionais</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left">&lt;</button>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="item"><img src="ocortico1.png"><span>Pagína inicial</span><button onclick="openModal('Página para apresentar o livro o cortiço.')">Ver detalhes</button></div>
+        <div class="item"><img src="ocorticosobre.png"><span>Sobre a obra</span><button onclick="openModal('Sobre a obra com texto interativo.')">Ver detalhes</button></div>
+        <div class="item"><img src="ocorticopers.png"><span>Personagens</span><button onclick="openModal('Layout responsivo com personagens.')">Ver detalhes</button></div>
+        <div class="item"><img src="ocorticogale.png"><span>Galeria</span><button onclick="openModal('galeria da obra com função de ampliar.')">Ver detalhes</button></div>
+      </div>
+    </div>
+    <button class="carousel-btn right">&gt;</button>
+  </div>
+</section>
+
+<section class="model-links reveal">
+  <h2>Veja alguns modelos</h2>
+  <div class="links-grid">
+    <a href="https://biolinkbetaniarh.netlify.app/" target="_blank" class="link-btn">Site biolink</a>
+    <a href="https://jl6dev.github.io/cursinho-online/" target="_blank" class="link-btn">Site Institucional</a>
+    <a href="https://jl6dev.github.io/ocortico2/" target="_blank" class="link-btn">Site Educacional</a>
+  </div>
+</section>
+  
+    <section class="skills reveal">
+        <h2>Recursos & Tecnologias</h2>
+        <div class="skills-grid">
+            <div class="skill"><img src="html5.svg"><span>HTML5</span></div>
+            <div class="skill"><img src="css.svg"><span>CSS3</span></div>
+            <div class="skill"><img src="javascript.svg"><span>JavaScript</span></div>
+            <div class="skill"><img src="github.svg"><span>Github</span></div>
+        </div>
+    </section>
+
+   
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-text"></p>
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+    
+<div class="img-modal" id="img-modal">
+  <span class="close-img">&times;</span>
+  <img class="img-modal-content" id="img-modal-content">
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
